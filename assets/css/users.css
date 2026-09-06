@@ -1,0 +1,369 @@
+/* ==========================================
+   USER HEADER
+========================================== */
+
+.user-header {
+    background: white;
+    padding: 20px 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 2px 8px
+        rgba(0, 0, 0, 0.06);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-header h2 {
+    margin-bottom: 5px;
+    font-size: 21px;
+    color: #1f2937;
+}
+
+.user-header p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   USER BUTTONS
+========================================== */
+
+.btn-primary {
+    background: #10b981;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #059669;
+}
+
+.btn-edit {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.btn-edit:hover {
+    background: #a7f3d0;
+}
+
+.btn-danger {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.btn-danger:hover {
+    background: #fecaca;
+}
+
+
+/* ==========================================
+   USER MESSAGES
+========================================== */
+
+.message {
+    background: #ecfdf5;
+    color: #065f46;
+
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    border: 1px solid #a7f3d0;
+}
+
+
+/* ==========================================
+   USER SEARCH
+========================================== */
+
+.search-box {
+    background: white;
+
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 2px 8px
+        rgba(0, 0, 0, 0.06);
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.search-form input {
+    flex: 1;
+    min-width: 0;
+
+    padding: 11px 13px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+
+    outline: none;
+}
+
+.search-form input:focus {
+    border-color: #10b981;
+}
+
+.clear-search {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+    border-radius: 7px;
+}
+
+
+/* ==========================================
+   USER TABLE SECTION
+========================================== */
+
+.section {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 2px 8px
+        rgba(0, 0, 0, 0.06);
+}
+
+.section-header {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 21px;
+    color: #1f2937;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 13px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    text-align: left;
+    white-space: nowrap;
+}
+
+th {
+    background: #ecfdf5;
+    color: #065f46;
+}
+
+td {
+    color: #374151;
+}
+
+tr:hover td {
+    background: #f9fafb;
+}
+
+
+/* ==========================================
+   USER ROLE
+========================================== */
+
+.role {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.role-admin {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.role-cashier {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+
+/* ==========================================
+   USER STATUS
+========================================== */
+
+.status {
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.status-active {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.status-inactive {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+
+/* ==========================================
+   USER ACTIONS
+========================================== */
+
+.actions {
+    display: flex;
+
+    gap: 6px;
+
+    flex-wrap: wrap;
+}
+
+.actions form {
+    margin: 0;
+}
+
+
+/* ==========================================
+   USER MODAL
+========================================== */
+
+.modal-content {
+    max-width: 500px;
+}
+
+.form-help {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 12px;
+
+    color: #6b7280;
+}
+
+
+/* ==========================================
+   USER RESPONSIVE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .user-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .user-header .btn {
+        width: 100%;
+    }
+
+    .search-form {
+        flex-direction: column;
+    }
+
+    .search-form button,
+    .clear-search {
+        width: 100%;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .table-container {
+        margin-left: -5px;
+        margin-right: -5px;
+
+        width: calc(100% + 10px);
+    }
+
+    table {
+        font-size: 13px;
+        min-width: 850px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .user-header {
+        padding: 18px;
+    }
+
+    .user-header h2 {
+        font-size: 19px;
+    }
+
+    .search-box {
+        padding: 15px;
+    }
+
+    .section {
+        padding: 18px;
+    }
+
+    .modal-content {
+        max-width: 100%;
+    }
+}

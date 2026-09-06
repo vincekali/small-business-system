@@ -1,0 +1,424 @@
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn {
+    border: none;
+
+    padding: 10px 16px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+/* ==========================================
+   PRIMARY / ADD BUTTON
+========================================== */
+
+.btn-add {
+    background: #10b981;
+
+    color: white;
+}
+
+
+.btn-add:hover {
+    background: #059669;
+}
+
+
+/* ==========================================
+   SAVE BUTTON
+========================================== */
+
+.btn-save {
+    background: #10b981;
+
+    color: white;
+}
+
+
+.btn-save:hover {
+    background: #059669;
+}
+
+
+/* ==========================================
+   CANCEL BUTTON
+========================================== */
+
+.btn-cancel {
+    background: #6b7280;
+
+    color: white;
+}
+
+
+.btn-cancel:hover {
+    background: #4b5563;
+}
+
+
+/* ==========================================
+   MESSAGES
+========================================== */
+
+.success {
+    background: #d1fae5;
+
+    color: #065f46;
+
+    padding: 13px 15px;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+
+    font-weight: bold;
+}
+
+
+.error {
+    background: #fee2e2;
+
+    color: #991b1b;
+
+    padding: 13px 15px;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   MODAL
+========================================== */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1100;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    overflow-y: auto;
+}
+
+
+/* ==========================================
+   MODAL CONTENT
+========================================== */
+
+.modal-content {
+    position: relative;
+
+    width: 90%;
+
+    max-width: 650px;
+
+    max-height: calc(100vh - 40px);
+
+    overflow-y: auto;
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==========================================
+   MODAL TITLE
+========================================== */
+
+.modal-content h2 {
+    margin-bottom: 20px;
+
+    padding-right: 40px;
+
+    color: #1f2937;
+}
+
+
+/* ==========================================
+   MODAL CLOSE BUTTON
+========================================== */
+
+.modal-close {
+    position: absolute;
+
+    top: 15px;
+
+    right: 18px;
+
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 0;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: transparent;
+
+    color: #6b7280;
+
+    font-size: 28px;
+
+    font-weight: normal;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.modal-close:hover {
+    background: #f3f4f6;
+
+    color: #1f2937;
+}
+
+
+/* ==========================================
+   OLD CLOSE CLASS
+   Kept for compatibility with older pages
+========================================== */
+
+.close {
+    float: right;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    color: #6b7280;
+
+    line-height: 20px;
+}
+
+
+.close:hover {
+    color: #111827;
+}
+
+
+/* ==========================================
+   FORM GRID
+========================================== */
+
+.modal-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+
+/* ==========================================
+   FORM GROUP
+========================================== */
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* ==========================================
+   FORM LABEL
+========================================== */
+
+.form-group label {
+    font-size: 14px;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+
+    color: #374151;
+}
+
+
+/* ==========================================
+   FORM INPUTS
+========================================== */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    width: 100%;
+
+    background: white;
+
+    color: #1f2937;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #10b981;
+}
+
+
+/* ==========================================
+   MODAL ACTIONS
+========================================== */
+
+.modal-actions {
+    margin-top: 20px;
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+/* ==========================================
+   MODAL BUTTONS
+   Used by newer pages
+========================================== */
+
+.modal-buttons {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 20px;
+}
+
+
+/* ==========================================
+   EMPTY STATE
+========================================== */
+
+.empty {
+    text-align: center;
+
+    padding: 40px;
+
+    color: #6b7280;
+}
+
+
+/* ==========================================
+   RESPONSIVE COMPONENTS
+========================================== */
+
+@media (max-width: 900px) {
+
+    .modal-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .modal {
+        padding: 15px;
+    }
+
+
+    .modal-content {
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 20px;
+    }
+
+
+    .modal-close {
+        top: 12px;
+
+        right: 14px;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .modal-content {
+        padding: 20px;
+
+        border-radius: 10px;
+    }
+
+
+    .modal-buttons {
+        flex-direction: column-reverse;
+    }
+
+
+    .modal-buttons .btn {
+        width: 100%;
+    }
+
+}

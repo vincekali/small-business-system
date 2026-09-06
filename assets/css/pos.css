@@ -1,0 +1,328 @@
+/* ==========================================
+   POS HEADER
+========================================== */
+
+.header {
+    height: 70px;
+    background: #065f46;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 25px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+
+/* ==========================================
+   POS CONTAINER
+========================================== */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    gap: 20px;
+
+    padding: 20px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+/* ==========================================
+   PRODUCTS PANEL
+========================================== */
+
+.products-panel {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.search {
+    width: 100%;
+    padding: 14px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    outline: none;
+}
+
+.search:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.10);
+}
+
+.products {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(160px, 1fr));
+
+    gap: 15px;
+}
+
+.product {
+    background: #ecfdf5;
+
+    border: 1px solid #d1fae5;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.product:hover {
+    transform: translateY(-2px);
+}
+
+.product-name {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.product-code {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.price {
+    color: #047857;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.stock {
+    margin-top: 5px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+
+/* ==========================================
+   CART PANEL
+========================================== */
+
+.cart-panel {
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    height: fit-content;
+}
+
+.cart-panel h2 {
+    margin-top: 0;
+    color: #065f46;
+}
+
+.cart-items {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.cart-item {
+    border-bottom: 1px solid #e5e7eb;
+
+    padding: 12px 0;
+}
+
+.cart-name {
+    font-weight: bold;
+}
+
+.cart-controls {
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 8px;
+}
+
+.qty-btn {
+    width: 30px;
+    height: 30px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #d1fae5;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.qty-btn:hover {
+    background: #a7f3d0;
+}
+
+.remove {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.remove:hover {
+    background: #fecaca;
+}
+
+.cart-price {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   POS SUMMARY
+========================================== */
+
+.summary {
+    border-top: 2px solid #e5e7eb;
+
+    margin-top: 15px;
+
+    padding-top: 15px;
+}
+
+.summary-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 10px 0;
+}
+
+.total {
+    font-size: 24px;
+
+    font-weight: bold;
+
+    color: #065f46;
+}
+
+.discount,
+.payment {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    margin-top: 5px;
+
+    outline: none;
+}
+
+.discount:focus,
+.payment:focus {
+    border-color: #10b981;
+}
+
+.change {
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #059669;
+}
+
+
+/* ==========================================
+   CHECKOUT BUTTON
+========================================== */
+
+.checkout {
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #10b981;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.checkout:hover {
+    background: #059669;
+}
+
+
+/* ==========================================
+   EMPTY CART
+========================================== */
+
+.empty {
+    text-align: center;
+
+    color: #9ca3af;
+
+    padding: 40px 10px;
+}
+
+
+/* ==========================================
+   POS RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ==========================================
+   LOGOUT BUTTON
+========================================== */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logout-btn {
+    background: #dc2626;
+    color: white;
+    text-decoration: none;
+    padding: 9px 14px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background: #b91c1c;
+}

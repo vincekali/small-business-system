@@ -1,0 +1,690 @@
+/* =========================================================
+   DASHBOARD
+========================================================= */
+
+.header {
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   KPI CARDS
+========================================================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card-value {
+    font-size: 25px;
+    font-weight: bold;
+    color: #065f46;
+}
+
+.expense {
+    color: #dc2626;
+}
+
+.profit {
+    color: #059669;
+}
+
+.warning {
+    color: #d97706;
+}
+
+.danger {
+    color: #dc2626;
+}
+
+
+/* =========================================================
+   DASHBOARD GRID
+========================================================= */
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.bottom-grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* =========================================================
+   DASHBOARD PANELS
+========================================================= */
+
+.dashboard-panel {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.panel-header h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.panel-header p {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   TREND PERIOD FILTERS
+========================================================= */
+
+.period-filters {
+    display: flex;
+    gap: 6px;
+}
+
+.period-btn {
+    border: 1px solid #d1d5db;
+    background: white;
+    color: #6b7280;
+    padding: 7px 11px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.period-btn:hover {
+    border-color: #10b981;
+    color: #065f46;
+}
+
+.period-btn.active {
+    background: #10b981;
+    color: white;
+    border-color: #10b981;
+}
+
+
+/* =========================================================
+   CHART AREAS
+========================================================= */
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.inventory-chart-container {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================================================
+   INVENTORY SUMMARY
+========================================================= */
+
+.inventory-summary {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.inventory-item {
+    background: #f9fafb;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inventory-label {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.inventory-number {
+    color: #065f46;
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   FINANCIAL SUMMARY
+========================================================= */
+
+.financial-list {
+    width: 100%;
+}
+
+.financial-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.financial-row span {
+    color: #6b7280;
+}
+
+.financial-row strong {
+    color: #374151;
+}
+
+.financial-row.total-row {
+    border-bottom: none;
+    margin-top: 5px;
+    padding-top: 18px;
+    font-size: 17px;
+}
+
+.financial-row.total-row span {
+    color: #111827;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   SALES PERFORMANCE
+========================================================= */
+
+.performance-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.performance-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.performance-item:last-child {
+    border-bottom: none;
+}
+
+.performance-item span {
+    color: #6b7280;
+}
+
+.performance-item strong {
+    color: #065f46;
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   INVENTORY LINK
+========================================================= */
+
+.inventory-link {
+    background: #ecfdf5;
+    color: #065f46;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.inventory-link:hover {
+    background: #d1fae5;
+}
+
+
+/* =========================================================
+   INVENTORY ALERTS
+========================================================= */
+
+.stock-alert-panel {
+    margin-bottom: 20px;
+}
+
+.stock-alert-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.stock-alert-item {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr auto;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.stock-alert-item:last-child {
+    border-bottom: none;
+}
+
+.stock-product {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.stock-product strong {
+    color: #111827;
+}
+
+.stock-product span {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.stock-info {
+    display: flex;
+    gap: 20px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.stock-info strong {
+    color: #374151;
+}
+
+.stock-status {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.stock-status.low {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.stock-status.out {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.stock-alert-empty {
+    text-align: center;
+    padding: 25px;
+    background: #ecfdf5;
+    border-radius: 8px;
+}
+
+.stock-alert-empty strong {
+    color: #065f46;
+}
+
+.stock-alert-empty p {
+    color: #6b7280;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   TOP-SELLING PRODUCTS
+========================================================= */
+
+.top-products-panel {
+    margin-bottom: 20px;
+}
+
+.top-products-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-product-item {
+    display: grid;
+    grid-template-columns: 40px 1fr auto auto;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.top-product-item:last-child {
+    border-bottom: none;
+}
+
+.product-rank {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ecfdf5;
+    color: #065f46;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.top-product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.top-product-info strong {
+    color: #111827;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.top-product-info span {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.units-sold {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.units-sold strong {
+    color: #065f46;
+    font-size: 16px;
+}
+
+.units-sold span {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.product-revenue {
+    min-width: 100px;
+    text-align: right;
+    color: #374151;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   RECENT TRANSACTIONS
+========================================================= */
+
+.section {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 13px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+th {
+    background: #ecfdf5;
+    color: #065f46;
+}
+
+td {
+    color: #374151;
+}
+
+tr:hover td {
+    background: #f9fafb;
+}
+
+.view-btn {
+    background: #10b981;
+    color: white;
+    text-decoration: none;
+    padding: 7px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.view-btn:hover {
+    background: #059669;
+}
+
+
+/* =========================================================
+   RESPONSIVE - LARGE LAPTOP
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bottom-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stock-alert-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .stock-info {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .top-product-item {
+        grid-template-columns: 35px 1fr auto;
+    }
+
+    .product-revenue {
+        display: none;
+    }
+
+    .units-sold {
+        align-items: flex-end;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .main {
+        margin-left: 0;
+        padding: 20px;
+        padding-top: 75px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-panel {
+        padding: 20px;
+    }
+
+    .panel-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .period-filters {
+        width: 100%;
+    }
+
+    .period-btn {
+        flex: 1;
+    }
+
+    .chart-container {
+        height: 280px;
+    }
+
+    .inventory-chart-container {
+        height: 220px;
+    }
+
+    .inventory-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .top-product-item {
+        grid-template-columns: 35px 1fr auto;
+    }
+
+    .product-revenue {
+        display: none;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - SMALL MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .period-filters {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+    }
+
+    .period-btn {
+        width: 100%;
+    }
+
+    .chart-container {
+        height: 260px;
+    }
+
+    .inventory-chart-container {
+        height: 210px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .card-value {
+        font-size: 22px;
+    }
+
+    .financial-row {
+        padding: 12px 0;
+    }
+
+    .performance-item {
+        padding: 14px 0;
+    }
+
+    .period-filters {
+        grid-template-columns: 1fr;
+    }
+
+}

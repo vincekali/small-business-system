@@ -1,0 +1,587 @@
+/* ==========================================
+   PRODUCT HEADER
+========================================== */
+
+.product-header {
+    background: white;
+
+    padding: 20px 25px;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 2px 8px
+        rgba(0, 0, 0, 0.06);
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.product-header h2 {
+    margin-bottom: 5px;
+
+    font-size: 21px;
+
+    color: #1f2937;
+}
+
+
+.product-header p {
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   PRODUCT TABLE BOX
+========================================== */
+
+.table-box {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 2px 8px
+        rgba(0, 0, 0, 0.06);
+
+    overflow-x: auto;
+
+    min-width: 0;
+}
+
+
+/* ==========================================
+   PRODUCT SEARCH
+========================================== */
+
+.search {
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+
+.search input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 10px 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    background: white;
+
+    color: #1f2937;
+}
+
+
+.search input::placeholder {
+    color: #9ca3af;
+}
+
+
+.search input:focus {
+    border-color: #10b981;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(16, 185, 129, 0.08);
+}
+
+
+.search button {
+    background: #065f46;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    font-weight: bold;
+}
+
+
+.search button:hover {
+    background: #047857;
+}
+
+
+.clear-search {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 10px 15px;
+
+    background: #e5e7eb;
+
+    color: #374151;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    white-space: nowrap;
+
+    font-weight: bold;
+}
+
+
+.clear-search:hover {
+    background: #d1d5db;
+}
+
+
+/* ==========================================
+   PRODUCT TABLE
+========================================== */
+
+table {
+    width: 100%;
+
+    min-width: 900px;
+
+    border-collapse: collapse;
+}
+
+
+th,
+td {
+    padding: 12px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    text-align: left;
+
+    white-space: nowrap;
+
+    font-size: 14px;
+}
+
+
+th {
+    background: #ecfdf5;
+
+    color: #065f46;
+
+    font-weight: bold;
+}
+
+
+td {
+    color: #374151;
+}
+
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+tr:hover td {
+    background: #f9fafb;
+}
+
+
+/* ==========================================
+   STOCK STATUS
+========================================== */
+
+.low-stock {
+    color: #dc2626;
+
+    font-weight: bold;
+}
+
+
+.in-stock {
+    color: #059669;
+
+    font-weight: bold;
+}
+
+
+/* ==========================================
+   PRODUCT ACTIONS
+========================================== */
+
+.actions {
+    display: flex;
+
+    gap: 6px;
+
+    align-items: center;
+}
+
+
+.actions form {
+    margin: 0;
+}
+
+
+/* ==========================================
+   EDIT BUTTON
+========================================== */
+
+.edit {
+    background: #10b981;
+
+    color: white;
+
+    padding: 7px 11px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    border: none;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+
+.edit:hover {
+    background: #059669;
+}
+
+
+/* ==========================================
+   DELETE BUTTON
+========================================== */
+
+.delete {
+    background: #dc2626;
+
+    color: white;
+
+    padding: 7px 11px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    border: none;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+
+.delete:hover {
+    background: #b91c1c;
+}
+
+
+/* ==========================================
+   PAGINATION
+========================================== */
+
+.pagination {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 6px;
+
+    margin-top: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.pagination a,
+.pagination span {
+    min-width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 0 10px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    border: 1px solid #d1d5db;
+
+    background: white;
+
+    color: #374151;
+
+    font-weight: bold;
+}
+
+
+.pagination a:hover {
+    background: #ecfdf5;
+
+    color: #065f46;
+
+    border-color: #10b981;
+}
+
+
+.pagination .active {
+    background: #10b981;
+
+    color: white;
+
+    border-color: #10b981;
+}
+
+
+.pagination .disabled {
+    color: #9ca3af;
+
+    background: #f3f4f6;
+
+    cursor: not-allowed;
+}
+
+
+/* ==========================================
+   PAGE INFO
+========================================== */
+
+.page-info {
+    text-align: center;
+
+    margin-top: 12px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   PRODUCT MODAL WIDTH
+   Modal itself is handled by components.css
+========================================== */
+
+.modal-content {
+    max-width: 700px;
+}
+
+
+/* ==========================================
+   PRODUCT MODAL FORM
+   General form styling is handled by
+   components.css
+========================================== */
+
+.form-group input[readonly] {
+    background: #f3f4f6;
+
+    color: #6b7280;
+
+    cursor: not-allowed;
+}
+
+
+/* ==========================================
+   PRODUCT MODAL ACTIONS
+========================================== */
+
+.modal-actions {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+
+/* ==========================================
+   PRODUCT RESPONSIVE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .table-box {
+        padding: 20px;
+    }
+
+
+    .product-header {
+        padding: 20px;
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 700px) {
+
+    .product-header {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 20px;
+    }
+
+
+    .product-header .btn-add {
+        width: 100%;
+    }
+
+
+    .search {
+        flex-direction: column;
+    }
+
+
+    .search input,
+    .search button,
+    .clear-search {
+        width: 100%;
+    }
+
+
+    .search button,
+    .clear-search {
+        justify-content: center;
+    }
+
+
+    .table-box {
+        padding: 15px;
+
+        border-radius: 10px;
+    }
+
+
+    table {
+        min-width: 900px;
+    }
+
+
+    .actions {
+        justify-content: flex-start;
+    }
+
+
+    .modal-content {
+        padding: 20px;
+
+        max-height: calc(100vh - 30px);
+    }
+
+
+    .modal-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+
+    .modal-actions .btn {
+        width: 100%;
+    }
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width: 480px) {
+
+    .product-header {
+        padding: 18px;
+    }
+
+
+    .product-header h2 {
+        font-size: 20px;
+    }
+
+
+    .product-header p {
+        font-size: 13px;
+    }
+
+
+    .table-box {
+        padding: 12px;
+    }
+
+
+    .modal-content {
+        padding: 18px;
+    }
+
+
+    .modal-content h2 {
+        font-size: 20px;
+
+        padding-right: 40px;
+    }
+
+
+    .success,
+    .error {
+        font-size: 13px;
+
+        padding: 11px 12px;
+    }
+
+}
